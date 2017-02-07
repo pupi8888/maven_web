@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head></h:head>
+    <h:body>
+
+        <p:layout style="min-width:400px;min-height:200px;" fullPage="true">
+            <p:layoutUnit position="north"  >
+                <h:form>     
+                    <p:growl id="messages" showDetail="true" />
+
+                    <p:toolbar>
+                        <f:facet name="left">
+                            <p:menuButton value="Clientes">
+                                <p:menuitem value="Nuevo Cliente" actionListener="#{toolbarView.save}" update="messages" icon="ui-icon-person" />
+                                <p:menuitem value="Listar Clientes" actionListener="#{toolbarView.update}" update="messages" icon="ui-icon-person" />
+                            </p:menuButton>
+                        </f:facet>
+                    </p:toolbar>
+                </h:form>
+            </p:layoutUnit>
+            <p:layoutUnit position="west" resizable="true" size="200" minSize="40" maxSize="200">
+                <h:form>
+                    <p:menu style="width: 160px;">
+                        <p:menuitem value="Nuevo Cliente" icon="ui-icon-plusthick" />
+                        <p:menuitem value="Listar Clientes" icon="ui-icon-search" />
+                    </p:menu>
+                </h:form>
+            </p:layoutUnit>
+            <p:layoutUnit position="center" minSize="100">
+                <p:outputLabel value="Clientes"></p:outputLabel>
+                <f:view>
+
+
+                    <h:form>
+                        <h1><h:outputText value="Clientes"/></h1>
+                        <p:dataTable value="#{clientesManagedBean.clientes}" var="item">
+                            <p:column>
+                                <f:facet name="header">
+                                    <h:outputText value="Cuit"/>
+                                </f:facet>
+                                <h:outputText value="#{item.cuit}"/>
+                            </p:column>
+                            <p:column>
+                                <f:facet name="header">
+                                    <h:outputText value="Nombre"/>
+                                </f:facet>
+                                <h:outputText  value="#{item.nombre} "/>
+                            </p:column>
+                            <p:column>
+                                <f:facet name="header">
+                                    <h:outputText value="Acciones"/>
+                                </f:facet>
+                                <p:button title="Detalles" style="width: 32px; height: 32px" icon="ui-icon-zoomin" ></p:button>
+                                <p:button title="Editar" style="width: 32px; height: 32px" icon="ui-icon-pencil" ></p:button>
+                                <p:button title="Borrar" style="width: 32px; height: 32px" icon="ui-icon-closethick" ></p:button>
+                            </p:column>
+                        </p:dataTable>
+                    </h:form>
+                </f:view>
+
+            </p:layoutUnit>
+            <p:layoutUnit position="south">
+                <h:form>
+                    <p>Usuario: #{loginManagedBean.user}</p>
+                    <h:commandLink action="#{loginManagedBean.logout}" value="Logout"></h:commandLink>
+
+                </h:form>
+            </p:layoutUnit>
+        </p:layout>
+
+
+
+    </h:body>
+</html>
