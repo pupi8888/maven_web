@@ -55,7 +55,7 @@ public class LoginManagedBean {
 		if (valid) {
 			HttpSession session = SessionUtils.getSession();
 			session.setAttribute("username", user);
-			return "index";
+			return "profile_select";
 		} else {
 			FacesContext.getCurrentInstance().addMessage(
 					null,

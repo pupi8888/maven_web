@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+    <h:head>
+        <title>Selección de perfil</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </h:head>
+    <h:body>
+
+        <p:layout fullPage="true">
+            <p:layoutUnit position="center">
+                <p:galleria style="display: block; margin: 0 auto;" value="#{profileImageBackingBean.images}" var="image" panelWidth="128" panelHeight="128" frameHeight="128" frameWidth="128">
+                    <p:graphicImage library="img" name="profile_pictures/#{image}" />
+                </p:galleria>
+            </p:layoutUnit>
+        </p:layout>
+
+    </h:body>
+</html>

@@ -1,6 +1,7 @@
-C:\Users\pupi\Documents\NetBeansProjects\mavenprojectweb\src\main\java\com\mycompany\mavenprojectweb\controlador\SessionUtils.java
-C:\Users\pupi\Documents\NetBeansProjects\mavenprojectweb\src\main\java\com\mycompany\mavenprojectweb\controlador\ClientesManagedBean.java
-C:\Users\pupi\Documents\NetBeansProjects\mavenprojectweb\src\main\java\com\mycompany\mavenprojectweb\modelo\AbstractModel.java
-C:\Users\pupi\Documents\NetBeansProjects\mavenprojectweb\src\main\java\com\mycompany\mavenprojectweb\modelo\Cliente.java
-C:\Users\pupi\Documents\NetBeansProjects\mavenprojectweb\src\main\java\com\mycompany\mavenprojectweb\controlador\LoginManagedBean.java
-C:\Users\pupi\Documents\NetBeansProjects\mavenprojectweb\src\main\java\com\mycompany\mavenprojectweb\controlador\AuthorizationFilter.java
+F:\Mis Documentos\NetBeansProjects\maven_web\src\main\java\com\mycompany\mavenprojectweb\controlador\ProfileImageBackingBean.java
+F:\Mis Documentos\NetBeansProjects\maven_web\src\main\java\com\mycompany\mavenprojectweb\controlador\SessionUtils.java
+F:\Mis Documentos\NetBeansProjects\maven_web\src\main\java\com\mycompany\mavenprojectweb\modelo\Cliente.java
+F:\Mis Documentos\NetBeansProjects\maven_web\src\main\java\com\mycompany\mavenprojectweb\controlador\ClientesManagedBean.java
+F:\Mis Documentos\NetBeansProjects\maven_web\src\main\java\com\mycompany\mavenprojectweb\modelo\AbstractModel.java
+F:\Mis Documentos\NetBeansProjects\maven_web\src\main\java\com\mycompany\mavenprojectweb\controlador\LoginManagedBean.java
+F:\Mis Documentos\NetBeansProjects\maven_web\src\main\java\com\mycompany\mavenprojectweb\controlador\AuthorizationFilter.java
